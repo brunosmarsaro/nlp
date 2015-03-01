@@ -37,3 +37,15 @@ class text_process:
             words_list.append(st.stem(word))
         
         self.text = ' '.join(words_list)
+
+    # Remove Stopwords
+    def remove_stopwords(self):
+        # The variable below receives a complete list of all stopwords in English
+        stopwords = nltk.corpus.stopwords.words('english')
+        # Transform the current text into a list of words
+        self.text = self.text.split()
+        # All the words within the list that are within stopwords are removed
+        self.text = [x for x in self.text if x not in stopwords]
+        # The list of words is joint together to form the text again.
+        self.text = ' '.join(self.text)
+
