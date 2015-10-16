@@ -5,4 +5,4 @@ First of all, make sure you've installed the Python Library NLTK.
 It can be found on http://www.nltk.org/
 
 
-Contact: brunosmarsaro@gmail.com
+Contact: bruno@bazelato.com
